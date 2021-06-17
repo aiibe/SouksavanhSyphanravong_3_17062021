@@ -12,6 +12,28 @@ img {
   object-fit: cover;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 25px;
+  background: rgb(255, 121, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 100%
+  );
+  margin: 15px 0;
+  padding: 15px 20px;
+  font-size: inherit;
+  font-weight: 500;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
 // Header
 
 header {
@@ -45,9 +67,30 @@ nav {
   background-color: #eaeaea;
 
   &__location {
+    display: flex;
+    align-items: center;
+
     span {
       font-weight: 500;
       margin: 0 15px;
     }
+  }
+}
+
+.hero {
+  padding: 15px 20px;
+  background: #f6f6f6;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
   }
 }
