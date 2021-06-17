@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
 img {
@@ -8,6 +10,12 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+header {
+  position: relative;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -21,8 +29,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px 20px;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav .center {
@@ -32,4 +38,23 @@ nav .center {
 nav .center .logo {
   display: inline-block;
   height: 30px;
+}
+
+.announcement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 20px;
+  background-color: #eaeaea;
+}
+
+.announcement__location span {
+  font-weight: 500;
+  margin: 0 15px;
 }
