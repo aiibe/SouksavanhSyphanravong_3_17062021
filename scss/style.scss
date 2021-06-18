@@ -150,3 +150,56 @@ nav {
     }
   }
 }
+
+// Footer
+
+footer {
+  background-color: #353535;
+
+  .foot {
+    padding: 20px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .logo {
+      display: inline-block;
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+
+    &__links {
+      font-weight: 700;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        i {
+          max-width: 13px;
+          margin-right: 15px;
+        }
+
+        span {
+          flex: 1;
+        }
+      }
+    }
+
+    &__legal {
+      font-weight: 500;
+    }
+  }
+}

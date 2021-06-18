@@ -170,3 +170,60 @@ nav .center .logo {
           flex: 1 0 85%;
   font-weight: 500;
 }
+
+footer {
+  background-color: #353535;
+}
+
+footer .foot {
+  padding: 20px;
+}
+
+footer .foot ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .foot ul li {
+  margin-bottom: 10px;
+}
+
+footer .foot ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .foot .logo {
+  display: inline-block;
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+footer .foot__links {
+  font-weight: 700;
+}
+
+footer .foot__links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .foot__links a i {
+  max-width: 13px;
+  margin-right: 15px;
+}
+
+footer .foot__links a span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .foot__legal {
+  font-weight: 500;
+}
