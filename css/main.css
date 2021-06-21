@@ -5,6 +5,8 @@ body {
 }
 
 button {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border: none;
   outline: none;
@@ -17,12 +19,16 @@ button {
   padding: 15px 20px;
   font-size: inherit;
   font-weight: 500;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 button:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   opacity: 0.9;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 img {
@@ -254,6 +260,15 @@ footer .foot__legal {
   overflow: hidden;
   text-decoration: none;
   color: inherit;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.restaurants .restaurant__card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .restaurants .restaurant__thumbnail {
