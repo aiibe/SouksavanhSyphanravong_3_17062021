@@ -197,11 +197,12 @@ footer .foot__legal {
           align-items: center;
 }
 
-.guide__step--active {
+.guide__step--active, .guide__step:hover {
+  cursor: pointer;
   background-color: #f5edff;
 }
 
-.guide__step--active .fas {
+.guide__step--active .fas, .guide__step:hover .fas {
   color: #9356dc;
 }
 

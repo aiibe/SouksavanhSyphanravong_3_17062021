@@ -54,7 +54,9 @@
     display: flex;
     align-items: center;
 
-    &--active {
+    &--active,
+    &:hover {
+      cursor: pointer;
       background-color: $bg-color-purple-light;
 
       .fas {
