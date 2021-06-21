@@ -1,0 +1,19 @@
+$font-text: "Roboto", sans-serif;
+$font-logo: "Shrikhand", sans-serif;
+
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-icon-default: #7e7e7e;
+
+$bg-color-dark: #353535;
+$bg-color-gray: #eaeaea;
+$bg-color-gray-light: #f6f6f6;
+$bg-color-purple-light: #f5edff;
+
+$bg-gradient: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+$bg-gradient-reverse: linear-gradient(
+  0deg,
+  $color-secondary 0%,
+  $color-primary 100%
+);

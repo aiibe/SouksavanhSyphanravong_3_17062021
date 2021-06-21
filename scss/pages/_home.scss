@@ -1,0 +1,162 @@
+.announcement {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-color-gray;
+
+  &__location {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 500;
+      margin: 0 15px;
+    }
+  }
+}
+
+.hero {
+  @include container;
+  background: $bg-color-gray-light;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+  }
+}
+
+.guide {
+  @include container;
+
+  &__steps {
+    counter-reset: number;
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  &__step {
+    @include shadow;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: $bg-color-gray-light;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &--active {
+      background-color: $bg-color-purple-light;
+
+      .fas {
+        color: $color-primary;
+      }
+    }
+
+    &::before {
+      color: #fff;
+      border-radius: 25px;
+      background-color: $color-primary;
+      padding: 5px 10px;
+      counter-increment: number;
+      content: counter(number);
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translateY(-50%);
+    }
+
+    i {
+      color: $color-icon-default;
+      text-align: center;
+      flex: 0 0 15%;
+      font-size: 24px;
+    }
+
+    span {
+      margin: 0 15px;
+      flex: 1 0 85%;
+      font-weight: 500;
+    }
+  }
+}
+
+.restaurants {
+  @include container;
+  background-color: $bg-color-gray-light;
+
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+
+    &__card {
+      @include shadow;
+      background-color: #fff;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &__thumbnail {
+      display: block;
+      height: 175px;
+    }
+
+    &__details {
+      padding: 15px;
+      display: flex;
+    }
+
+    &__info {
+      flex: 80%;
+
+      h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.75;
+      }
+
+      p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 17px;
+      }
+    }
+
+    &__favorite {
+      flex: 0 0 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 24px;
+      }
+
+      .fa-heart {
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px black;
+        background-image: white;
+
+        &:hover {
+          -webkit-text-stroke: transparent;
+          background-image: $bg-gradient-reverse;
+        }
+      }
+    }
+  }
+}

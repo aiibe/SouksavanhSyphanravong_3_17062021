@@ -1,15 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
@@ -19,8 +11,8 @@ button {
   color: #fff;
   border-radius: 25px;
   background: #ff79da;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   margin: 15px 0;
   padding: 15px 20px;
   font-size: inherit;
@@ -33,13 +25,21 @@ button:hover {
   opacity: 0.9;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 header {
   position: relative;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,19 +49,77 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px 20px;
+  padding: 20px;
 }
 
-nav .center {
+header nav .center {
   display: inline-block;
 }
 
-nav .center .logo {
+header nav .center .logo {
   display: inline-block;
   height: 30px;
 }
 
+footer {
+  background-color: #353535;
+}
+
+footer .foot {
+  padding: 20px;
+}
+
+footer .foot ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .foot ul li {
+  margin-bottom: 10px;
+}
+
+footer .foot ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .foot__logo {
+  display: inline-block;
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+footer .foot__links {
+  font-weight: 700;
+}
+
+footer .foot__links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .foot__links a i {
+  max-width: 13px;
+  margin-right: 15px;
+}
+
+footer .foot__links a span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .foot__legal {
+  font-weight: 500;
+}
+
 .announcement {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +129,6 @@ nav .center .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px 20px;
   background-color: #eaeaea;
 }
 
@@ -90,7 +147,7 @@ nav .center .logo {
 }
 
 .hero {
-  padding: 15px 20px;
+  padding: 20px;
   background: #f6f6f6;
   text-align: center;
 }
@@ -108,7 +165,7 @@ nav .center .logo {
 }
 
 .guide {
-  padding: 15px 20px;
+  padding: 20px;
 }
 
 .guide__steps {
@@ -119,10 +176,10 @@ nav .center .logo {
 }
 
 .guide__step {
-  padding: 25px;
-  border-radius: 20px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 20px;
   margin-bottom: 25px;
   background-color: #f6f6f6;
   position: relative;
@@ -166,7 +223,7 @@ nav .center .logo {
 }
 
 .guide__step span {
-  margin-left: 15px;
+  margin: 0 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 85%;
           flex: 1 0 85%;
@@ -189,12 +246,12 @@ nav .center .logo {
 }
 
 .restaurants .restaurant__card {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 15px;
   overflow: hidden;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
 }
@@ -261,61 +318,4 @@ nav .center .logo {
   -webkit-text-stroke: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
-}
-
-footer {
-  background-color: #353535;
-}
-
-footer .foot {
-  padding: 20px;
-}
-
-footer .foot ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer .foot ul li {
-  margin-bottom: 10px;
-}
-
-footer .foot ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer .foot .logo {
-  display: inline-block;
-  max-width: 100px;
-  margin-bottom: 20px;
-}
-
-footer .foot__links {
-  font-weight: 700;
-}
-
-footer .foot__links a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .foot__links a i {
-  max-width: 13px;
-  margin-right: 15px;
-}
-
-footer .foot__links a span {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-footer .foot__legal {
-  font-weight: 500;
 }
