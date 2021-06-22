@@ -32,6 +32,29 @@ img {
   object-fit: cover;
 }
 
+.heart-icon {
+  width: 25px;
+  height: 25px;
+}
+.heart-icon__stop-start {
+  stop-color: #9356dc;
+}
+.heart-icon__stop-end {
+  stop-color: #ff79da;
+}
+.heart-icon__regular {
+  transform-origin: center center;
+  transform: scale(0.9, 0.9);
+}
+.heart-icon__solid {
+  fill: url(#icon-gradient);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.heart-icon__solid:hover {
+  opacity: 1;
+}
+
 header {
   position: relative;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -223,18 +246,4 @@ footer .foot__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.restaurants .restaurant__favorite i {
-  font-size: 24px;
-}
-.restaurants .restaurant__favorite .fa-heart {
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1px black;
-  background-image: white;
-}
-.restaurants .restaurant__favorite .fa-heart:hover {
-  -webkit-text-stroke: transparent;
-  background-image: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
 }

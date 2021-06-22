@@ -1,0 +1,27 @@
+.heart-icon {
+  width: 25px;
+  height: 25px;
+
+  &__stop-start {
+    stop-color: $color-primary;
+  }
+
+  &__stop-end {
+    stop-color: $color-secondary;
+  }
+
+  &__regular {
+    transform-origin: center center;
+    transform: scale(.9, .9);
+  }
+
+  &__solid {
+    fill: url(#icon-gradient);
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
