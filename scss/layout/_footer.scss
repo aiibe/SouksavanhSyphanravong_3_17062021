@@ -3,48 +3,43 @@ footer {
 
   .foot {
     @include container;
+    display: flex;
+    flex-direction: column;
 
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    &__links {
+      @include unstyled-ul;
+      display: inline-block;
+      font-weight: 700;
+    }
 
-      li {
-        margin-bottom: 10px;
+    &__legal {
+      @include unstyled-ul;
+      display: inline-block;
+      font-weight: 500;
+    }
 
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
-      }
+    &__link-wrap {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &__link-icon {
+      max-width: 13px;
+      margin-right: 15px;
+    }
+
+    &__link-title {
+      flex: 1;
     }
 
     &__logo {
       display: inline-block;
       max-width: 100px;
       margin-bottom: 20px;
-    }
-
-    &__links {
-      font-weight: 700;
-
-      a {
-        display: flex;
-        align-items: center;
-
-        i {
-          max-width: 13px;
-          margin-right: 15px;
-        }
-
-        span {
-          flex: 1;
-        }
-      }
-    }
-
-    &__legal {
-      font-weight: 500;
     }
   }
 }

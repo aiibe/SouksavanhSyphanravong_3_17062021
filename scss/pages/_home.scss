@@ -1,18 +1,18 @@
-.announcement {
+.announce {
   @include container;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $bg-color-gray;
 
-  &__location {
+  &__wrap {
     display: flex;
     align-items: center;
+  }
 
-    span {
-      font-weight: 500;
-      margin: 0 15px;
-    }
+  &__location {
+    font-weight: 500;
+    margin: 0 15px;
   }
 }
 
@@ -21,13 +21,13 @@
   background: $bg-color-gray-light;
   text-align: center;
 
-  h2 {
+  &__title {
     font-size: 24px;
     font-weight: 700;
     margin: 20px 0;
   }
 
-  p {
+  &__subtitle {
     font-size: 18px;
     font-weight: 300;
     margin: 0 0 10px 0;
@@ -76,19 +76,19 @@
       left: -15px;
       transform: translateY(-50%);
     }
+  }
 
-    i {
-      color: $color-icon-default;
-      text-align: center;
-      flex: 0 0 15%;
-      font-size: 24px;
-    }
+  &__step-icon {
+    color: $color-icon-default;
+    text-align: center;
+    flex: 0 0 15%;
+    font-size: 24px;
+  }
 
-    span {
-      margin: 0 15px;
-      flex: 1 0 85%;
-      font-weight: 500;
-    }
+  &__step-title {
+    margin: 0 15px;
+    flex: 1 0 85%;
+    font-weight: 500;
   }
 }
 

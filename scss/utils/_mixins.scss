@@ -5,3 +5,9 @@
 @mixin shadow($n: 0.1) {
   box-shadow: 0 5px 10px rgba(0, 0, 0, $n);
 }
+
+@mixin unstyled-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

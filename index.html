@@ -16,41 +16,42 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="center">
-          <a href="/" class="logo"
+      <nav class="nav">
+        <div class="nav__center">
+          <a href="/" class="nav__logo"
             ><img src="/images/ohmyfood.png" alt="OhMyFood's logo"
           /></a>
         </div>
       </nav>
     </header>
     <main>
-      <section class="announcement">
-        <div class="announcement__location">
-          <i class="fas fa-map-marker-alt"></i><span>Paris, Belleville</span>
+      <section class="announce">
+        <div class="announce__wrap">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="announce__location">Paris, Belleville</span>
         </div>
       </section>
       <section class="hero">
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>
+        <h2 class="hero__title">Réservez le menu qui vous convient</h2>
+        <p class="hero__subtitle">
           Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
-        <button>Explorer nos restaurants</button>
+        <button class="hero__call-to-action">Explorer nos restaurants</button>
       </section>
       <section class="guide">
         <h2>Fonctionnement</h2>
         <ol class="guide__steps">
           <li class="guide__step">
-            <i class="fas fa-mobile-alt"></i>
-            <span>Choisissez un restaurant</span>
+            <i class="fas fa-mobile-alt guide__step-icon"></i>
+            <span class="guide__step-title">Choisissez un restaurant</span>
           </li>
           <li class="guide__step">
-            <i class="fas fa-list"></i>
-            <span>Composez votre menu</span>
+            <i class="fas fa-list guide__step-icon"></i>
+            <span class="guide__step-title">Composez votre menu</span>
           </li>
-          <li class="guide__step guide__step--active">
-            <i class="fas fa-store"></i>
-            <span>Dégustez au restaurant</span>
+          <li class="guide__step">
+            <i class="fas fa-store guide__step-icon"></i>
+            <span class="guide__step-title">Dégustez au restaurant</span>
           </li>
         </ol>
       </section>
@@ -127,22 +128,26 @@
           ><img src="/images/ohmyfood@2x.svg" alt="OhMyFood's logo"
         /></a>
         <ul class="foot__links">
-          <li>
-            <a href="#"
-              ><i class="fas fa-utensils"></i
-              ><span>Proposer un restaurant</span></a
+          <li class="foot__link-wrap">
+            <a href="#" class="foot__link"
+              ><i class="fas fa-utensils foot__link-icon"></i
+              ><span class="foot__link-title">Proposer un restaurant</span></a
             >
           </li>
-          <li>
-            <a href="#"
-              ><i class="fas fa-hands-helping"></i
-              ><span>Devenir partenaire</span></a
+          <li class="foot__link-wrap">
+            <a href="#" class="foot__link"
+              ><i class="fas fa-hands-helping foot__link-icon"></i
+              ><span class="foot__link-title">Devenir partenaire</span></a
             >
           </li>
         </ul>
         <ul class="foot__legal">
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+          <li class="foot__link-wrap">
+            <a href="#" class="foot__link">Mentions légales</a>
+          </li>
+          <li class="foot__link-wrap">
+            <a href="mailto:contact@ohmyfood.fr" class="foot__link">Contact</a>
+          </li>
         </ul>
       </div>
     </footer>

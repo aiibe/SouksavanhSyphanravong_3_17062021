@@ -2,19 +2,19 @@ header {
   position: relative;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
-  nav {
+  .nav {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 
-    .center {
+    &__center {
       display: inline-block;
+    }
 
-      .logo {
-        display: inline-block;
-        height: 30px;
-      }
+    &__logo {
+      display: inline-block;
+      height: 30px;
     }
   }
 }
