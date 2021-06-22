@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass --watch scss/main.scss:css/style.css --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiibe/SouksavanhSyphanravong_3_17062021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aiibe/SouksavanhSyphanravong_3_17062021/issues"
+  },
+  "homepage": "https://github.com/aiibe/SouksavanhSyphanravong_3_17062021#readme",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}
