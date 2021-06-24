@@ -90,6 +90,18 @@
     flex: 1 0 85%;
     font-weight: 500;
   }
+
+  @include screen-above(tablet) {
+    &__steps {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__step {
+      flex: 0 1 25%;
+    }
+  }
 }
 
 .restaurants {

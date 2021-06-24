@@ -196,6 +196,16 @@ footer .foot__logo {
   flex: 1 0 85%;
   font-weight: 500;
 }
+@media (min-width: 1280px) {
+  .guide__steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .guide__step {
+    flex: 0 1 25%;
+  }
+}
 
 .restaurants {
   padding: 20px;
