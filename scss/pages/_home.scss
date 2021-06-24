@@ -109,6 +109,7 @@
       text-decoration: none;
       color: inherit;
       transition: all 0.2s ease-in-out;
+      position: relative;
 
       &:hover {
         transform: scale(1.02);
@@ -148,6 +149,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    &__new {
+      background-color: $color-tertiary;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 1;
+      border-radius: 2px;
+    }
+
+    &__new-text {
+      display: block;
+      color: #269d80;
+      padding: 8px 15px;
+      font-weight: 700;
+      font-size: 14px;
     }
   }
 }

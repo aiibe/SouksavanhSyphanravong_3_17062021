@@ -214,6 +214,7 @@ footer .foot__logo {
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease-in-out;
+  position: relative;
 }
 .restaurants .restaurant__card:hover {
   transform: scale(1.02);
@@ -246,4 +247,19 @@ footer .foot__logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.restaurants .restaurant__new {
+  background-color: #99e2d0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  border-radius: 2px;
+}
+.restaurants .restaurant__new-text {
+  display: block;
+  color: #269d80;
+  padding: 8px 15px;
+  font-weight: 700;
+  font-size: 14px;
 }
