@@ -95,77 +95,98 @@
 .restaurants {
   @include container;
   background-color: $bg-color-gray-light;
+}
 
-  .restaurant {
+.restaurant {
+  display: flex;
+  flex-direction: column;
+
+  &__cell {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__card {
+    @include shadow;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.02);
+      @include shadow(0.2);
+    }
+  }
+
+  &__thumbnail {
+    display: block;
+    height: 175px;
+  }
+
+  &__details {
+    padding: 15px;
     display: flex;
-    flex-direction: column;
+  }
 
-    &__card {
-      @include shadow;
-      background-color: #fff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.2s ease-in-out;
-      position: relative;
+  &__info {
+    flex: 80%;
+  }
 
-      &:hover {
-        transform: scale(1.02);
-        @include shadow(0.2);
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  &__location {
+    margin: 0;
+    font-weight: 300;
+    font-size: 17px;
+  }
+
+  &__favorite {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__new {
+    background-color: $color-tertiary;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    border-radius: 2px;
+  }
+
+  &__new-text {
+    display: block;
+    color: #269d80;
+    padding: 8px 15px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  @include screen-above(mobile) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__cell {
+      flex: 0 1 50%;
+
+      &:nth-child(odd) > div {
+        margin-right: 10px;
       }
-    }
 
-    &__thumbnail {
-      display: block;
-      height: 175px;
-    }
-
-    &__details {
-      padding: 15px;
-      display: flex;
-    }
-
-    &__info {
-      flex: 80%;
-    }
-
-    &__title {
-      margin: 0;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 1.75;
-    }
-
-    &__location {
-      margin: 0;
-      font-weight: 300;
-      font-size: 17px;
-    }
-
-    &__favorite {
-      flex: 0 0 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__new {
-      background-color: $color-tertiary;
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      z-index: 1;
-      border-radius: 2px;
-    }
-
-    &__new-text {
-      display: block;
-      color: #269d80;
-      padding: 8px 15px;
-      font-weight: 700;
-      font-size: 14px;
+      &:nth-child(even) > div {
+        margin-left: 10px;
+      }
     }
   }
 }
