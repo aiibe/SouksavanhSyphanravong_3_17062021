@@ -230,13 +230,13 @@ footer .foot__logo {
 .restaurants .restaurant__info {
   flex: 80%;
 }
-.restaurants .restaurant__info h2 {
+.restaurants .restaurant__title {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.75;
 }
-.restaurants .restaurant__info p {
+.restaurants .restaurant__location {
   margin: 0;
   font-weight: 300;
   font-size: 17px;

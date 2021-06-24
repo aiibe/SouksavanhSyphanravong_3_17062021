@@ -128,19 +128,19 @@
 
     &__info {
       flex: 80%;
+    }
 
-      h2 {
-        margin: 0;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.75;
-      }
+    &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.75;
+    }
 
-      p {
-        margin: 0;
-        font-weight: 300;
-        font-size: 17px;
-      }
+    &__location {
+      margin: 0;
+      font-weight: 300;
+      font-size: 17px;
     }
 
     &__favorite {
