@@ -21,6 +21,10 @@ header {
       display: flex;
       align-items: center;
       cursor: pointer;
+
+      .back-icon {
+        font-size: 20px;
+      }
     }
 
     &__logo {
