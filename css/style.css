@@ -67,11 +67,21 @@ header {
 header .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 20px;
 }
 header .nav__center {
-  display: inline-block;
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+header .nav__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 header .nav__logo {
   display: inline-block;

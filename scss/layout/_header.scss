@@ -5,11 +5,22 @@ header {
   .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 20px;
 
     &__center {
-      display: inline-block;
+      flex: 1;
+      text-align: center;
+      position: relative;
+    }
+
+    &__back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
     }
 
     &__logo {
