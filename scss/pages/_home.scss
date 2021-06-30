@@ -192,11 +192,11 @@
     &__cell {
       flex: 0 1 50%;
 
-      &:nth-child(odd) > div {
+      &:nth-child(odd) .restaurant__card {
         margin-right: 10px;
       }
 
-      &:nth-child(even) > div {
+      &:nth-child(even) .restaurant__card {
         margin-left: 10px;
       }
     }

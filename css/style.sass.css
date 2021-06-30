@@ -316,10 +316,10 @@ footer .foot__logo {
   .restaurant__cell {
     flex: 0 1 50%;
   }
-  .restaurant__cell:nth-child(odd) > div {
+  .restaurant__cell:nth-child(odd) .restaurant__card {
     margin-right: 10px;
   }
-  .restaurant__cell:nth-child(even) > div {
+  .restaurant__cell:nth-child(even) .restaurant__card {
     margin-left: 10px;
   }
 }
