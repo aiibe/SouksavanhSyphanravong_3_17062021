@@ -30,8 +30,10 @@ header {
     }
 
     &__logo {
-      display: inline-block;
-      height: 30px;
+      font-family: $font-logo;
+      text-decoration: none;
+      color: inherit;
+      font-size: 30px;
     }
   }
 }
