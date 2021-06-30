@@ -145,7 +145,20 @@
       }
 
       &__block {
-        width: 32%;
+        flex: 3;
+        overflow: hidden;
+
+        &:nth-child(3n-2) {
+          margin-right: 10px;
+        }
+
+        &:nth-child(3n-1) {
+          margin: 0 5px;
+        }
+
+        &:nth-child(3n) {
+          margin-left: 10px;
+        }
       }
     }
   }
