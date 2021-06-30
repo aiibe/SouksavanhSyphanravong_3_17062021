@@ -12,6 +12,12 @@
   padding: 0;
 }
 
+@mixin text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 @mixin screen-above($breakpoint) {
   // Larger than mobile
   @if $breakpoint==mobile {

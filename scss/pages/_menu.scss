@@ -1,5 +1,152 @@
 .cover {
+  position: relative;
+  z-index: -1;
   &__photo {
     height: 45vh;
+  }
+}
+
+.menu {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $font-logo;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  &__wrap {
+    @include container;
+    background-color: $bg-color-gray-light;
+    border-radius: 50px 50px 0 0;
+    margin-top: -60px;
+  }
+
+  &__block {
+    margin: 0 0 30px 0;
+  }
+
+  &__block-title {
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.85;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: $color-tertiary;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    @include shadow;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover,
+    &:active {
+      .menu__check {
+        width: 70px;
+        transform: translateX(0%);
+      }
+
+      .menu__check-icon {
+        transform: rotate(0deg);
+        transition: transform 500ms ease-in;
+      }
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  &__meta-info {
+    flex: 90%;
+    overflow: hidden;
+  }
+
+  &__meta-title {
+    @include text-ellipsis;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  &__meta-details {
+    @include text-ellipsis;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__meta-price {
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  &__check {
+    width: 0;
+    background-color: $color-tertiary;
+    transition: all 500ms ease-in-out;
+    position: relative;
+  }
+
+  &__check-block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__check-icon {
+    color: $color-tertiary;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 0 10px;
+    transform: rotate(-360deg);
+  }
+
+  &__order {
+    text-align: center;
+  }
+
+  @include screen-above(tablet) {
+    .menu {
+      &__body {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__block {
+        width: 32%;
+      }
+    }
   }
 }

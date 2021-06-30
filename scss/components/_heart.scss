@@ -1,6 +1,7 @@
 .heart-icon {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 
   &__stop-start {
     stop-color: $color-primary;
@@ -12,7 +13,7 @@
 
   &__regular {
     transform-origin: center center;
-    transform: scale(.9, .9);
+    transform: scale(0.9, 0.9);
   }
 
   &__solid {
