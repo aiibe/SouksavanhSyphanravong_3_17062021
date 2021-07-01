@@ -145,6 +145,19 @@ footer .foot__logo {
   font-size: 18px;
   margin-bottom: 20px;
 }
+@media (min-width: 650px) {
+  footer .foot__links, footer .foot__legal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  footer .foot__logo {
+    text-align: center;
+  }
+  footer .foot__link-wrap {
+    margin: 0 10px;
+  }
+}
 
 .announce {
   padding: 20px;

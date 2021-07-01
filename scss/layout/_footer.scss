@@ -43,5 +43,22 @@ footer {
       font-size: 18px;
       margin-bottom: 20px;
     }
+
+    @include screen-above(mobile) {
+      &__links,
+      &__legal {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      &__logo {
+        text-align: center;
+      }
+
+      &__link-wrap {
+        margin: 0 10px;
+      }
+    }
   }
 }
