@@ -232,6 +232,7 @@ footer .foot__logo {
 .announce__location {
   font-weight: 500;
   margin: 0 15px;
+  font-size: inherit;
 }
 
 .hero {
