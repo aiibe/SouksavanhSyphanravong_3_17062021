@@ -68,7 +68,7 @@ img {
   opacity: 0;
   transition: opacity 0.5s;
 }
-.heart-icon__solid:hover {
+.heart-icon__solid:hover, .heart-icon__solid:active {
   opacity: 1;
 }
 
