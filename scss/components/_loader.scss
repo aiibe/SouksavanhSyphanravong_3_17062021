@@ -3,24 +3,23 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  animation: fadeaway 1.5s ease 1;
+  animation: fadeaway 2s ease 1;
 
   &__spinner {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 0;
+    height: 0;
     border: 10px solid transparent;
     border-top: 10px solid $color-primary;
     border-left: 10px solid $color-secondary;
     border-bottom: 10px solid $color-tertiary;
-    animation: spin 500ms linear infinite;
+    animation: spin 500ms linear 5, shrink 2s linear 1;
   }
 
   @keyframes spin {
@@ -34,12 +33,31 @@
   }
 
   @keyframes fadeaway {
-    0%,
-    80% {
+    0% {
+      opacity: 1;
+      height: 100%;
+    }
+    75% {
       opacity: 1;
     }
-    100% {
+    80% {
       opacity: 0;
+      height: 100%;
+    }
+    100% {
+      height: 0;
+    }
+  }
+
+  @keyframes shrink {
+    0%,
+    90% {
+      width: 80px;
+      height: 80px;
+    }
+    100% {
+      width: 0px;
+      height: 0px;
     }
   }
 }
