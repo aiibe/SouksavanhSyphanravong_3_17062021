@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.menu__wrap, .restaurants, .guide, .hero, .announce, footer .foot {
+.menu__wrap, .restaurants, .guide, .hero, .announce, footer .foot, header .nav {
   padding: 20px;
 }
 
@@ -142,7 +142,6 @@ header {
 header .nav {
   display: flex;
   align-items: center;
-  padding: 20px;
 }
 header .nav__center {
   flex: 1;

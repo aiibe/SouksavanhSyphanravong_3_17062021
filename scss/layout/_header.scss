@@ -5,7 +5,7 @@ header {
   .nav {
     display: flex;
     align-items: center;
-    padding: 20px;
+    @extend %container;
 
     &__center {
       flex: 1;
