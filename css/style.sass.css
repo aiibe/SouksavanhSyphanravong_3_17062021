@@ -151,13 +151,14 @@ header .nav__center {
   justify-content: center;
 }
 header .nav__back {
+  text-decoration: none;
+  color: inherit;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 header .nav__back .back-icon {
   font-size: 20px;
