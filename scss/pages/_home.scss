@@ -1,5 +1,5 @@
 .announce {
-  @include container;
+  @extend %container;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .hero {
-  @include container;
+  @extend %container;
   background: $bg-color-gray-light;
   text-align: center;
 
@@ -35,7 +35,7 @@
 }
 
 .guide {
-  @include container;
+  @extend %container;
 
   &__steps {
     counter-reset: number;
@@ -105,7 +105,7 @@
 }
 
 .restaurants {
-  @include container;
+  @extend %container;
   background-color: $bg-color-gray-light;
 }
 
@@ -190,7 +190,7 @@
     flex-wrap: wrap;
 
     &__cell {
-      flex: 0 1 50%;
+      flex: cell-width(2);
 
       &:nth-child(odd) .restaurant__card {
         margin-right: 10px;

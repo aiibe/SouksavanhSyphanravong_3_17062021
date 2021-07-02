@@ -2,18 +2,18 @@ footer {
   background-color: $bg-color-dark;
 
   .foot {
-    @include container;
+    @extend %container;
     display: flex;
     flex-direction: column;
 
     &__links {
-      @include unstyled-ul;
+      @extend %unstyled-ul;
       display: inline-block;
       font-weight: 700;
     }
 
     &__legal {
-      @include unstyled-ul;
+      @extend %unstyled-ul;
       display: inline-block;
       font-weight: 500;
     }

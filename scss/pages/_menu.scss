@@ -20,7 +20,7 @@
   }
 
   &__wrap {
-    @include container;
+    @extend %container;
     background-color: $bg-color-gray-light;
     border-radius: 50px 50px 0 0;
     margin-top: -60px;
@@ -77,7 +77,7 @@
     @for $i from 1 through 3 {
       &:nth-child(#{$i}) {
         opacity: 0;
-        animation: fadein 500ms linear $count * 1ms forwards;
+        animation: fadein 500ms linear $count + ms forwards;
       }
       $count: $count + 200;
     }
@@ -164,7 +164,7 @@
       }
 
       &__block {
-        flex: 3;
+        flex: cell-width(3);
         overflow: hidden;
 
         &:nth-child(3n-2) {
