@@ -466,6 +466,10 @@ footer .foot__logo {
   opacity: 0;
   animation: fadein 500ms linear 400ms forwards;
 }
+.menu__item:nth-child(4) {
+  opacity: 0;
+  animation: fadein 500ms linear 600ms forwards;
+}
 @keyframes fadein {
   0% {
     transform: translateY(10px);
