@@ -2,5 +2,5 @@
 
 // Divide by total $columns
 @function cell-width($columns) {
-  @return math.percentage(math.div(100, $columns));
+  @return math.percentage(math.div(1, $columns));
 }
