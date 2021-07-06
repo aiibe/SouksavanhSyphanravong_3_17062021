@@ -64,7 +64,6 @@
     &:active {
       .menu__check {
         width: 70px;
-        transform: translateX(0%);
       }
 
       .menu__check-icon {
@@ -128,14 +127,11 @@
   &__check {
     width: 0;
     background-color: $color-tertiary;
-    transition: all 500ms ease-in-out;
-    position: relative;
+    transition: width 500ms ease-in-out;
+    overflow: hidden;
   }
 
   &__check-block {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     min-width: 70px;
     height: 100%;
     display: flex;
