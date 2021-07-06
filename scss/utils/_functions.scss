@@ -1,4 +1,6 @@
+@use "sass:math";
+
 // Divide by total $columns
 @function cell-width($columns) {
-  @return (100 / $columns) * 1%;
+  @return math.percentage(math.div(100, $columns));
 }
