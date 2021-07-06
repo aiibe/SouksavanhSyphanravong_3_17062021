@@ -176,10 +176,16 @@
     right: 15px;
     z-index: 1;
     border-radius: 2px;
-    opacity: 0;
 
     &--show {
-      opacity: 1;
+      &::before {
+        content: "Nouveau";
+        display: block;
+        color: #269d80;
+        padding: 8px 15px;
+        font-weight: 700;
+        font-size: 14px;
+      }
     }
   }
 
