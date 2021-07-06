@@ -72,24 +72,7 @@
       }
     }
 
-    $count: 0;
-    @for $i from 1 through 4 {
-      &:nth-child(#{$i}) {
-        opacity: 0;
-        animation: fadein 500ms linear $count + ms forwards;
-      }
-      $count: $count + 200;
-    }
-
-    @keyframes fadein {
-      0% {
-        transform: translateY(10px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+    @include children-fade-in(4, 300);
   }
 
   &__meta {

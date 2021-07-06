@@ -8,6 +8,27 @@
   text-overflow: ellipsis;
 }
 
+@mixin children-fade-in($children, $delay) {
+  $count: 0;
+  @for $i from 1 through $children {
+    &:nth-child(#{$i}) {
+      opacity: 0;
+      animation: fadein 500ms linear $count + ms forwards;
+    }
+    $count: $count + $delay;
+  }
+
+  @keyframes fadein {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 @mixin screen-above($breakpoint) {
   // Larger than mobile
   @if $breakpoint==mobile {
